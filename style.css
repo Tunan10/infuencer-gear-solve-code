@@ -12,126 +12,128 @@
   font-family: 'Inter', sans-serif;
   font-family: 'Manrope', sans-serif;
 }
-header {
-  width: 100%;
-}
-.nav-container {
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 90px;
+}
+.container ul {
+  display: flex;
+  gap: 30px;
+}
+.container ul li a,
+.container ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #3a3a3a;
 }
 .logo {
-  margin: 87px 0 0 120px;
+  display: flex;
+  align-items: center;
+  gap: 59px;
 }
-.logo img {
+.logo i {
   display: none;
 }
 .logo h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
   font-size: 24px;
-}
-.nav-menu {
-  margin: 95px 120px 0 0;
-}
-.nav-menu ul {
-  display: flex;
-  gap: 34px;
-}
-.nav-menu ul li {
-  list-style: none;
-}
-.nav-menu ul li a {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: #3a3a3a;
-  font-weight: 600;
-  font-size: 16px;
-}
-.nav-main-container {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-text {
-  margin-left: 120px;
-  margin-top: 145.8px;
-}
-.nav-text button {
-  margin-top: 16.1px;
-  border: none;
-  background: #e02c6d;
-  padding: 10px 24px 10px 24px;
-  border-radius: 41px;
-  color: #ffffff;
   font-weight: bold;
 }
-
-.heding {
+#banner {
+  display: flex;
+  justify-content: space-around;
+}
+.banner-content {
   width: 582px;
+  height: 270px;
+  margin: 145px 0 0 120px;
 }
-.nav-bio {
-  width: 505px;
-  margin-top: 16px;
-}
-.nav-bio p {
-  font-size: 16px;
-  font-weight: 600;
-}
-.heding h1 {
+.banner-content h1 {
   font-size: 52px;
+}
+.banner-content p {
+  font-size: 16px;
+  color: #3a3a3a;
+  width: 505px;
+  height: 60px;
+  margin-top: 10px;
+}
+.banner-content button {
+  border: none;
+  background-color: #e02c6d;
+  color: aliceblue;
   font-weight: bold;
+  width: 196px;
+  height: 44px;
+  border-radius: 44px;
 }
-
-.nav-img {
-  position: relative;
-  width: 400px;
-  margin-top: 50px;
-  margin-right: 132px;
+.banner-content button i {
+  margin-left: 8px;
 }
-.back {
-  position: absolute;
-  width: 100%;
+.banner-img {
+  width: 475px;
+  height: 475px;
+  /* border: 1px solid tomato; */
+  margin: 50px 132px 0 0;
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
-.on {
-  position: absolute;
-}
-.nav-card {
-  width: 70%;
-  max-width: 1110px;
-  margin: 0 auto;
-  height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px;
-  gap: 30px;
-  border: 1px solid rgb(231, 231, 231);
-  box-shadow: 0 6px 50px 0 #00000010;
-}
-.nav-card img {
-  width: 97px;
-}
-
-.hide {
-  display: none;
+.banner-img img {
+  width: 440px;
+  height: 414px;
+  margin: 30px 33px 0 0;
 }
 
 @media screen and (max-width: 576px) {
-  .nav-container {
-    display: block;
+  .container ul li a,
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 16px 0 35px;
   }
-  .nav-menu {
+  .container ul li {
     display: none;
   }
-  .logo {
-    max-width: 576px;
-    margin: 0 auto;
-    margin-top: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .logo img {
+  .logo i {
     display: block;
+  }
+  #banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    max-width: 75%;
+
+    /* border: 1px solid tomato; */
+    margin: 22px auto;
+    background-image: url(./images/Circle design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .banner-img img {
+    width: 280px;
+    height: auto;
+    margin: 120px 32px 16px 50px;
+  }
+  .banner-content {
+    width: 360px;
+    height: 222px;
+    margin-top: 22px;
+
+    text-align: center;
+  }
+  .banner-content h1 {
+    font-size: 28px;
+    /* width: 360px; */
+    /* text-align: center; */
+  }
+  .banner-content p {
+    font-size: 14px;
+    text-align: center;
+    width: 303px;
   }
 }
